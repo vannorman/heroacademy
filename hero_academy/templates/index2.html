@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/static/css/index.css' />
+    <title> Hero Academy</title>
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png"> <!-- https://www.teepublic.com/pin/10477446-mana-potion-illustration -->
+</head>
+<body>
+    <div id="logo"></div>
+    <div id="title">
+        HERO ACADEMY
+<!--        <div class="subtitle1">🖥️ 📱 ⚔️  👨‍💻 👩‍💻</div> --> 
+        <div class="subtitle2">Learn + Code × Play </div>
+    </div>
+    <div id="castle"></div>
+    <div id="info">
+        <ul>
+           <li id="aboutBtn">ABOUT US</li>
+           <li id="pricingBtn">PRICING</li>
+           <li>START NOW
+       </ul>
+    </div>
+
+    <div id="offerings">
+        <div class="title">
+            ABOUT US
+        </div>
+        <ul>
+            <li> We teach programming, game design, and project management. 
+            <li> We work with learners of all ages to design, code, and deploy projects.
+            </ul>
+        <div class="title">
+           TECH STACK
+        </div>
+        <ul>
+            <li> Project types include: AI, Video Games, Web Apps, Mobile Apps
+            <li> Technologies: Python, TensorFlow, PyTorch, Javascript, HTML, Unity3D, C#, PlayCanvas, & more
+        </ul>
+        <div class="title">
+          GET STARTED 
+        </div>
+        <ul>
+            <li> Ready to learn & build? Head over to our <a href="/pricing/">Pricing page</a>
+            <li> First lesson is free, and we work with any budget.
+            <li> Please
+            <a href="mailto:intake@heroacademy.ai?subject=Intro%20session&body=Hi,%20I'd%20like%20to%20learn%20more%20about%20financial%20assistance" target="_blank" class="btn">inquire here</a>
+            if you are seeking financial assistance.
+
+        </ul>
+
+
+    </div>
+
+</body>
+</html>
+    <script src="/static/js/jquery-min.js"></script>
+    <script>
+        $('#pricingBtn').on('click', function(){
+            window.location.href = '/pricing/'
+        });
+        $('#aboutBtn').on('click', function(){
+            $('html, body').animate({
+            scrollTop: $("#offerings").offset().top - 60
+        }, 300);
+        }); 
+    </script>
+

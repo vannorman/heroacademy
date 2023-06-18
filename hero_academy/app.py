@@ -152,6 +152,10 @@ def save_trip():
 
 
 
+@app.route('/pricing/')
+def pricing():
+    return render_template('pricing.html')
+
 @app.route('/')
 def home():
     now = datetime.now()
@@ -167,7 +171,7 @@ def home():
         trips = "none, not logged in"
 
 
-    return render_template('index.html', now=now, trips=trips, user=user_firstname)
+    return render_template('index2.html', now=now, trips=trips, user=user_firstname)
 
 if __name__ == '__main__':
     app.run()
